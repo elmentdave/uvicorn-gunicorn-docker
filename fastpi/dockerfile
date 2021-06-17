@@ -1,0 +1,7 @@
+FROM elment/uvicorn-gunicorn:python3.8-alpine3.13
+
+LABEL maintainer="D.B.A <davidba941@gmail.com>"
+
+RUN pip install --no-cache-dir fastapi
+
+COPY ./app /app
